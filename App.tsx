@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Crousal from './Src/Crousal';
+import FlashList from './Src/FlashList';
+import HorizontalList from './Src/HorizontalList';
+import VerticalList from './Src/VerticalList';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  //  <Crousal/>
+  //  <HorizontalList/>
+  // <VerticalList/>
+  <FlashList/>
   );
 }
 
