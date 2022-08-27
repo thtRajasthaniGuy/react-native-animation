@@ -11,7 +11,7 @@ const transitionFun = (
     <Transition.Out  durationMs={2000} interpolation="easeInOut" />
   </Transition.Together>
 );
-const Transitions = () => {
+const TransitionsApi = () => {
   const [btnIndex, setBtnIndex] = React.useState(0);
 
   const { width } = Dimensions.get("screen");
@@ -69,4 +69,4 @@ const Transitions = () => {
   );
 };
 
-export default Transitions;
+export default TransitionsApi;

@@ -7,7 +7,7 @@ import HorizontalList from './Src/HorizontalList';
 import VerticalList from './Src/VerticalList';
 import ProgressBar from './Src/progressBar';
 import FlotingImage from './Src/flotingImage';
-import Transition from './Src/Transition';
+import Transition from './Src/Transition/useshared';
 import tokyoghoul from './Src/flotingImage/image/naruto.png'
 export default function App() {
   return (
