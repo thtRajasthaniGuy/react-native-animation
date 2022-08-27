@@ -8,21 +8,22 @@ import VerticalList from './Src/VerticalList';
 import ProgressBar from './Src/progressBar';
 import FlotingImage from './Src/flotingImage';
 import Transition from './Src/Transition/useshared';
-import tokyoghoul from './Src/flotingImage/image/naruto.png'
+import tokyoghoul from './Src/flotingImage/image/naruto.png';
+import PhoneRing from './Src/phoneRing/reanimated/reanimated'
 export default function App() {
   return (
   //  <Crousal/>
   //  <HorizontalList/>
   // <VerticalList/>
-    <View style={{flex:1,justifyContent: 'center'}}>
-    {/* <View style={{marginHorizontal:'10%'}}>
-    <ProgressBar totalTime={30} progressTime={29} height={10}/>
-    </View>
-    <FlotingImage image={tokyoghoul}/> */}
-    <Transition/>
-    </View>
+    // <View style={{flex:1,justifyContent: 'center'}}>
+    // <View style={{marginHorizontal:'10%'}}>
+    // <ProgressBar totalTime={30} progressTime={30} height={10}/>
+    // </View>
+    // <FlotingImage image={tokyoghoul}/>
+    // <Transition/>
+    // </View>
   // <FlashList/>
-
+<PhoneRing/>
   );
 }
 

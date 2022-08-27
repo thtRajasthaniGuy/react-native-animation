@@ -32,9 +32,9 @@ const ProgressBar = ({totalTime, progressTime, height}: Props) => {
     const interval = setInterval(() => {
       setIndex((index + 1) % (progressTime + 1));
     }, 1000);
-    if(progressTime === index){
-      clearInterval(interval);
-    }
+    // if(progressTime === index){
+    //   clearInterval(interval);
+    // }
     return () => {
       clearInterval(interval);
     };
