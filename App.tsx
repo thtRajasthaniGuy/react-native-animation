@@ -15,7 +15,7 @@ export default function App() {
   // <VerticalList/>
   <View style={{justifyContent: "center",flex:1}}>
     <View style={{marginHorizontal:'10%'}}>
-  <ProgressBar totalTime={10} progressTime={10} height={10}/>
+  <ProgressBar totalTime={30} progressTime={29} height={10}/>
   </View>
   <FlotingImage image={tokyoghoul}/>
   </View>
