@@ -18,30 +18,33 @@ const ProgressBar = ({totalTime, progressTime, height}: Props) => {
   const progressAnimatedValue = useSharedValue(-1000);
   const reactive = useSharedValue(-1000);
   const [width, setWidth] = React.useState(0);
-//   const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = React.useState(0);
   React.useEffect(() => {
     progressAnimatedValue.value = reactive.value
   }, []);
 
   React.useEffect(() => {
-    reactive.value = withSpring( -width + (width * progressTime) / totalTime,{stiffness:75});
-  }, [progressTime, width]);
+    reactive.value = withSpring( -width + (width * index) / totalTime,{stiffness:75});
+  }, [index, width]);
 
-//   React.useEffect(() => {
-//     const interval = setInterval(() => {
-//       setIndex((index + 1) % (10 + 1));
-//     }, 1000);
-
-//     return () => {
-//       clearInterval(interval);
-//     };
-//   }, [index]);
+  React.useEffect(() => {
+    
+    const interval = setInterval(() => {
+      setIndex((index + 1) % (10 + 1));
+    }, 1000);
+    if(progressTime === index){
+      clearInterval(interval);
+    }
+    return () => {
+      clearInterval(interval);
+    };
+  }, [index]);
  
   const progressBarAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [{translateX: reactive.value}],
     };
-  },[width,progressTime,totalTime]);
+  },[width,index,totalTime]);
  
   return (
   

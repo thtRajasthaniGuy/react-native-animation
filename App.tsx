@@ -9,29 +9,13 @@ import ProgressBar from './Src/progressBar';
 import FlotingImage from './Src/flotingImage';
 import tokyoghoul from './Src/flotingImage/image/naruto.png'
 export default function App() {
-  const [index, setIndex] = React.useState(0);
-  let interval:any;
-const increaseProgressBar = () =>{
-  interval = setInterval(() => {
-    setIndex((index + 1) % (10 + 1));
-  }, 1000);
-
-}
-
-  React.useEffect(() => {
-    increaseProgressBar()
-    return () => {
-      clearInterval(interval);
-    };
-  }, [index]);
- 
   return (
   //  <Crousal/>
   //  <HorizontalList/>
   // <VerticalList/>
   <View style={{justifyContent: "center",flex:1}}>
     <View style={{marginHorizontal:'10%'}}>
-  <ProgressBar totalTime={10} progressTime={index} height={10}/>
+  <ProgressBar totalTime={10} progressTime={10} height={10}/>
   </View>
   <FlotingImage image={tokyoghoul}/>
   </View>
