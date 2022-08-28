@@ -7,7 +7,7 @@ import HorizontalList from './Src/HorizontalList';
 import VerticalList from './Src/VerticalList';
 import ProgressBar from './Src/progressBar';
 import FlotingImage from './Src/flotingImage';
-import Transition from './Src/Transition/useshared';
+import Transition from './Src/Transition/withTiming';
 import tokyoghoul from './Src/flotingImage/image/naruto.png';
 import PhoneRing from './Src/phoneRing/reanimated/reanimated'
 export default function App() {
@@ -23,7 +23,8 @@ export default function App() {
     // <Transition/>
     // </View>
   // <FlashList/>
-<PhoneRing/>
+
+<Transition/>
   );
 }
 
