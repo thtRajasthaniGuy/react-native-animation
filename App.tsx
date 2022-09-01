@@ -9,7 +9,10 @@ import ProgressBar from './Src/progressBar';
 import FlotingImage from './Src/flotingImage';
 import Transition from './Src/Transition/withTiming';
 import tokyoghoul from './Src/flotingImage/image/naruto.png';
-import PhoneRing from './Src/phoneRing/reanimated/reanimated'
+import PhoneRing from './Src/phoneRing/reanimated/reanimated';
+import TabBar from './Src/Tabbar';
+import CounterTicker from './Src/counterTicker/index'
+
 export default function App() {
   return (
   //  <Crousal/>
@@ -24,15 +27,9 @@ export default function App() {
     // </View>
   // <FlashList/>
 
-<Transition/>
+
+
+<CounterTicker/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
