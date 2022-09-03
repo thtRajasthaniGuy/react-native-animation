@@ -22,6 +22,9 @@ Phone ring
 
 https://user-images.githubusercontent.com/33393692/187040858-5e77b1f2-d6ff-426c-adf7-bba717647c84.MOV
 
+Text Ticker
+
+https://user-images.githubusercontent.com/33393692/188265394-0c58af65-235d-49aa-a8b4-01d816c9a65e.mp4
 
 
 
