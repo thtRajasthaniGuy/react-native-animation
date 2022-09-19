@@ -1,4 +1,4 @@
-﻿# animation-expo-reanimated
+﻿# Animation in React-Native Reanimated2
 
 Horizontal crousal
 
