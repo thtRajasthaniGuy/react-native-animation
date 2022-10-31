@@ -11,10 +11,12 @@
   "dependencies": {
     "@shopify/flash-list": "1.1.0",
     "@shopify/react-native-skia": "0.1.141",
+    "eas-cli": "^2.6.0",
     "expo": "^46.0.0",
     "expo-dev-client": "~1.2.1",
     "expo-splash-screen": "~0.16.1",
     "expo-status-bar": "~1.4.0",
+    "lottie-react-native": "^5.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.5",
