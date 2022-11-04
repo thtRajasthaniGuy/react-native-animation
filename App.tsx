@@ -12,11 +12,11 @@ import PhoneRing from './Src/phoneRing/reanimated/reanimated';
 import TabBar from './Src/Tabbar';
 import CounterTicker from './Src/counterTicker/index'
 import Halloween from './Src/halloween';
-
+import ThreeDButton from './Src/3dButton';
 export default function App() {
   return (
  
-<Halloween/>
+<ThreeDButton/>
   );
 }
 
