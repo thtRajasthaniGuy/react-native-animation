@@ -9,7 +9,7 @@ export default function Firecrakers() {
         }
     })
     React.useEffect(()=>{
-        translateY.value = withTiming(-50,{duration:5000})
+        translateY.value = withTiming(-50,{duration:100})
     },[])
   return (
     <Animated.View

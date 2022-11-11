@@ -2,7 +2,7 @@ import React from 'react';
 import {View,Pressable,Text,StyleSheet} from 'react-native';
 import Animated,{useSharedValue,useAnimatedStyle,interpolate, withRepeat, withTiming} from 'react-native-reanimated'
 import * as Haptics from 'expo-haptics';
-const ThreeDButton = () =>{
+const ThreeDButton = ({onPress}:any) =>{
     const AnimatedButton = Animated.createAnimatedComponent(Pressable);
     const imgAniamtedValue = useSharedValue(0);
     const btnAniamtedValue = useSharedValue(0);
@@ -36,6 +36,7 @@ const ThreeDButton = () =>{
       }
       const clickOut  = () =>{
         btnAniamtedValue.value = withTiming(0,{duration:50})
+        onPress()
       }
     return(
         <Animated.View style={[viewAnimated,styles.container]}>
